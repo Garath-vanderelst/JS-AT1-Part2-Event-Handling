@@ -2,36 +2,83 @@
 
 //No need for globals here
 
-
-
-functio ??() {//Last button function here
-alert("Don't forget to use strict in Function Name here");
+function resetBoxes(){
+    var greenBox = document.getElementById("green")
+    var redBox = document.getElementById("red")
+    var blueBoxIn = document.getElementById("blueIn")
+    var blueBoxBottom = document.getElementById("blueBottom")
+    greenBox.className = "hidden";
+    redBox.className = "hidden";
+    blueBoxIn.className = "hidden";
+    blueBoxBottom.className = "hidden";
 }
 
+function btn6_clicked() {
+    "use strict"
+    var red = document.getElementById("redBox")
+    var blue = document.getElementById("blueBox")
+}
 
+function btn5_clicked() {
+    "use strict"
+    var red = document.getElementById("redBox")
+    var blue = document.getElementById("blueBox")
+}
 
+function btn4_clicked() {
+    "use strict"
+    var red = document.getElementById("redBox")
+    var blue = document.getElementById("blueBox")
+}
 
+function btn3_clicked() {
+    "use strict"
+    var red = document.getElementById("redBox")
+    var blue = document.getElementById("blueBox")
+}
 
+function btn2_clicked() {
+    "use strict"
+    resetBoxes();
+    var greenBox = document.getElementById("green")
+    var redBox = document.getElementById("red")
+    var blueBox = document.getElementById("blueBottom")
+    greenBox.classList.remove("hidden")
+    greenBox.classList.add("greenBox")
+    redBox.classList.remove("hidden")
+    redBox.classList.add("redBox")
+    blueBox.classList.remove("hidden")
+    blueBox.classList.add("blueBox")
+    blueBox.style.width = "150px";
+}
 
-
-
-
-
-
-
-
-foutncin() {//Fisrt button function here
-alert("Don't forget to use strict in Function Name here");
+function btn1_clicked() {
+    "use strict"
+    resetBoxes();
+    var greenBox = document.getElementById("green")
+    var redBox = document.getElementById("red")
+    var blueBox = document.getElementById("blueIn")
+    greenBox.classList.remove("hidden")
+    greenBox.classList.add("greenBox")
+    redBox.classList.remove("hidden")
+    redBox.classList.add("redBox")
+    blueBox.classList.remove("hidden")
+    blueBox.classList.add("blueBox")
 }
 
 function init(){
-alert("Don't forget to use strict in init function");
-
-
+    "use strict"
+    btn1_clicked;
 // All event listeners here
-
-
+    document.getElementById('btn1').addEventListener("click", btn1_clicked);
+    document.getElementById('btn2').addEventListener("click", btn2_clicked);
+    document.getElementById('btn3').addEventListener("click", btn3_clicked);
+    document.getElementById('btn4').addEventListener("click", btn4_clicked);
+    document.getElementById('btn5').addEventListener("click", btn5_clicked);
+    document.getElementById('btn6').addEventListener("click", btn6_clicked);
 }
+
+
 
 
 window.onload = init;
