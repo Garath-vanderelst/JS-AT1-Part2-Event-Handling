@@ -4,24 +4,32 @@
 
 .redBox {
   width:50%;
-  height: 400px;
+  height: 600px;
+  width: 600px;
   padding: 4px;
   background-color: red;
   color: red;
   font-size: 25px;
   box-sizing: border-box;
-  display: block
+  display: block;
+  position: relative;
+  top: 0px;
+  left: 0px
 }
 
 .blueBox {
   width: 30%;
-  height: 150px;
+  height: 300px;
+  width: 300px;
   padding: 4px;
   background-color: blue;
   color: blue;
   font-size: 25px;
   box-sizing: small;
-  display: block
+  display: block;
+  position: relative;
+  top:0px;
+  left:0px;
 }
 
 .greenBox{

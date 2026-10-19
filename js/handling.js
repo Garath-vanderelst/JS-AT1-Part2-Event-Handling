@@ -11,30 +11,66 @@ function resetBoxes(){
     redBox.className = "hidden";
     blueBoxIn.className = "hidden";
     blueBoxBottom.className = "hidden";
+    blueBoxIn.style.top = "0";
+    redBox.style.top = "0";
+    blueBoxIn.style.left = "0";
+    redBox.style.left = "0";
+    greenBox.style.backgroundColor = "Transparent"
 }
 
 function btn6_clicked() {
     "use strict"
-    var red = document.getElementById("redBox")
-    var blue = document.getElementById("blueBox")
+    var greenBox = document.getElementById("green")
+    greenBox.style.backgroundColor = "green"
 }
 
 function btn5_clicked() {
     "use strict"
-    var red = document.getElementById("redBox")
-    var blue = document.getElementById("blueBox")
+    resetBoxes();
+    var greenBox = document.getElementById("green")
+    var redBox = document.getElementById("red")
+    var blueBox = document.getElementById("blueIn")
+    greenBox.classList.remove("hidden")
+    greenBox.classList.add("greenBox")
+    redBox.classList.remove("hidden")
+    redBox.classList.add("redBox")
+    blueBox.classList.remove("hidden")
+    blueBox.classList.add("blueBox")
+    blueBox.style.left = "45px"
+    blueBox.style.top = "20px"
 }
 
 function btn4_clicked() {
     "use strict"
-    var red = document.getElementById("redBox")
-    var blue = document.getElementById("blueBox")
+    resetBoxes();
+    var greenBox = document.getElementById("green")
+    var redBox = document.getElementById("red")
+    var blueBox = document.getElementById("blueBottom")
+    greenBox.classList.remove("hidden")
+    greenBox.classList.add("greenBox")
+    redBox.classList.remove("hidden")
+    redBox.classList.add("redBox")
+    blueBox.classList.remove("hidden")
+    blueBox.classList.add("blueBox")
+    redBox.style.left = "304px"
+    blueBox.style.top = "-600px"
 }
 
 function btn3_clicked() {
     "use strict"
-    var red = document.getElementById("redBox")
-    var blue = document.getElementById("blueBox")
+    resetBoxes();
+    var greenBox = document.getElementById("green")
+    var redBox = document.getElementById("red")
+    var blueBox = document.getElementById("blueIn")
+    greenBox.classList.remove("hidden")
+    greenBox.classList.add("greenBox")
+    redBox.classList.remove("hidden")
+    redBox.classList.add("redBox")
+    blueBox.classList.remove("hidden")
+    blueBox.classList.add("blueBox")
+    blueBox.style.left = "596px"
+    blueBox.style.top = "-4px"
+    
 }
 
 function btn2_clicked() {
@@ -49,7 +85,7 @@ function btn2_clicked() {
     redBox.classList.add("redBox")
     blueBox.classList.remove("hidden")
     blueBox.classList.add("blueBox")
-    blueBox.style.width = "150px";
+
 }
 
 function btn1_clicked() {
