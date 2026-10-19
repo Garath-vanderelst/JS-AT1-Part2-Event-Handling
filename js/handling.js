@@ -3,10 +3,10 @@
 //No need for globals here
 
 function resetBoxes(){
-    var greenBox = document.getElementById("green")
-    var redBox = document.getElementById("red")
-    var blueBoxIn = document.getElementById("blueIn")
-    var blueBoxBottom = document.getElementById("blueBottom")
+    var greenBox = document.getElementById("green");
+    var redBox = document.getElementById("red");
+    var blueBoxIn = document.getElementById("blueIn");
+    var blueBoxBottom = document.getElementById("blueBottom");
     greenBox.className = "hidden";
     redBox.className = "hidden";
     blueBoxIn.className = "hidden";
@@ -15,96 +15,95 @@ function resetBoxes(){
     redBox.style.top = "0";
     blueBoxIn.style.left = "0";
     redBox.style.left = "0";
-    greenBox.style.backgroundColor = "Transparent"
+    greenBox.style.backgroundColor = "Transparent";
 }
 
 function btn6_clicked() {
-    "use strict"
-    var greenBox = document.getElementById("green")
-    greenBox.style.backgroundColor = "green"
+    "use strict";
+    var greenBox = document.getElementById("green");
+    greenBox.style.backgroundColor = "green";
 }
 
 function btn5_clicked() {
-    "use strict"
+    "use strict";
     resetBoxes();
-    var greenBox = document.getElementById("green")
-    var redBox = document.getElementById("red")
-    var blueBox = document.getElementById("blueIn")
-    greenBox.classList.remove("hidden")
-    greenBox.classList.add("greenBox")
-    redBox.classList.remove("hidden")
-    redBox.classList.add("redBox")
-    blueBox.classList.remove("hidden")
-    blueBox.classList.add("blueBox")
-    blueBox.style.left = "45px"
-    blueBox.style.top = "20px"
+    var greenBox = document.getElementById("green");
+    var redBox = document.getElementById("red");
+    var blueBox = document.getElementById("blueIn");
+    greenBox.classList.remove("hidden");
+    greenBox.classList.add("greenBox");
+    redBox.classList.remove("hidden");
+    redBox.classList.add("redBox");
+    blueBox.classList.remove("hidden");
+    blueBox.classList.add("blueBox");
+    blueBox.style.left = "45px";
+    blueBox.style.top = "20px";
 }
 
 function btn4_clicked() {
-    "use strict"
+    "use strict";
     resetBoxes();
-    var greenBox = document.getElementById("green")
-    var redBox = document.getElementById("red")
-    var blueBox = document.getElementById("blueBottom")
-    greenBox.classList.remove("hidden")
-    greenBox.classList.add("greenBox")
-    redBox.classList.remove("hidden")
-    redBox.classList.add("redBox")
-    blueBox.classList.remove("hidden")
-    blueBox.classList.add("blueBox")
-    redBox.style.left = "304px"
-    blueBox.style.top = "-600px"
+    var greenBox = document.getElementById("green");
+    var redBox = document.getElementById("red");
+    var blueBox = document.getElementById("blueBottom");
+    greenBox.classList.remove("hidden");
+    greenBox.classList.add("greenBox");
+    redBox.classList.remove("hidden");
+    redBox.classList.add("redBox");
+    blueBox.classList.remove("hidden");
+    blueBox.classList.add("blueBox");
+    redBox.style.left = "304px";
+    blueBox.style.top = "-600px";
 }
 
 function btn3_clicked() {
-    "use strict"
+    "use strict";
     resetBoxes();
-    var greenBox = document.getElementById("green")
-    var redBox = document.getElementById("red")
-    var blueBox = document.getElementById("blueIn")
-    greenBox.classList.remove("hidden")
-    greenBox.classList.add("greenBox")
-    redBox.classList.remove("hidden")
-    redBox.classList.add("redBox")
-    blueBox.classList.remove("hidden")
-    blueBox.classList.add("blueBox")
-    blueBox.style.left = "596px"
-    blueBox.style.top = "-4px"
+    var greenBox = document.getElementById("green");
+    var redBox = document.getElementById("red");
+    var blueBox = document.getElementById("blueIn");
+    greenBox.classList.remove("hidden");
+    greenBox.classList.add("greenBox");
+    redBox.classList.remove("hidden");
+    redBox.classList.add("redBox");
+    blueBox.classList.remove("hidden");
+    blueBox.classList.add("blueBox");
+    blueBox.style.left = "596px";
+    blueBox.style.top = "-4px";
     
 }
 
 function btn2_clicked() {
-    "use strict"
+    "use strict";
     resetBoxes();
-    var greenBox = document.getElementById("green")
-    var redBox = document.getElementById("red")
-    var blueBox = document.getElementById("blueBottom")
-    greenBox.classList.remove("hidden")
-    greenBox.classList.add("greenBox")
-    redBox.classList.remove("hidden")
-    redBox.classList.add("redBox")
-    blueBox.classList.remove("hidden")
-    blueBox.classList.add("blueBox")
+    var greenBox = document.getElementById("green");
+    var redBox = document.getElementById("red");
+    var blueBox = document.getElementById("blueBottom");
+    greenBox.classList.remove("hidden");
+    greenBox.classList.add("greenBox");
+    redBox.classList.remove("hidden");
+    redBox.classList.add("redBox");
+    blueBox.classList.remove("hidden");
+    blueBox.classList.add("blueBox");
 
 }
 
 function btn1_clicked() {
-    "use strict"
+    "use strict";
     resetBoxes();
-    var greenBox = document.getElementById("green")
-    var redBox = document.getElementById("red")
-    var blueBox = document.getElementById("blueIn")
-    greenBox.classList.remove("hidden")
-    greenBox.classList.add("greenBox")
-    redBox.classList.remove("hidden")
-    redBox.classList.add("redBox")
-    blueBox.classList.remove("hidden")
-    blueBox.classList.add("blueBox")
+    var greenBox = document.getElementById("green");
+    var redBox = document.getElementById("red");
+    var blueBox = document.getElementById("blueIn");
+    greenBox.classList.remove("hidden");
+    greenBox.classList.add("greenBox");
+    redBox.classList.remove("hidden");
+    redBox.classList.add("redBox");
+    blueBox.classList.remove("hidden");
+    blueBox.classList.add("blueBox");
 }
 
 function init(){
-    "use strict"
-    btn1_clicked;
+    "use strict";
 // All event listeners here
     document.getElementById('btn1').addEventListener("click", btn1_clicked);
     document.getElementById('btn2').addEventListener("click", btn2_clicked);
